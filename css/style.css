@@ -1,0 +1,287 @@
+@import "null.css";
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ШРИФТЫ */
+
+/* ? Oswald */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Press+Start+2P&display=swap");
+
+/*? Comforter */
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Press+Start+2P&display=swap");
+
+/*? Bloxhall */
+@font-face {
+	font-family: "Bloxhall";
+	src: url("../fonts/Bloxhall.woff2") format("woff2"), url("../fonts/Bloxhall.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+	margin: 35px;
+	background-color: rgb(229, 212, 255);
+}
+
+h1,
+h2,
+.img,
+.center {
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	text-shadow: 5px 5px 5px rgb(255, 39, 39), -10px -15px 10px rgb(39, 61, 255), -20px 30px 5px rgb(142, 235, 54),
+		50px -10px 8px rgb(206, 82, 255), -100px 100px 3px rgba(38, 0, 255, 0.473), 100px -80px 6px rgb(236, 255, 65);
+	color: fuchsia;
+	margin-top: 130px;
+	margin-bottom: 120px;
+	/* background-color: #fff; */
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	background-color: rgb(235, 189, 254);
+	padding: 50px 0;
+	color: rgb(255, 0, 242);
+	font-weight: 700;
+	font-style: italic;
+	text-shadow: 20px 20px 5px rgb(157, 255, 0), -20px -20px 5px rgb(95, 0, 79), -20px 20px 5px rgb(107, 176, 255),
+		20px -20px 5px rgb(189, 48, 255), -150px -200px 3px rgb(255, 126, 20), 300px -150px 3px rgb(162, 0, 255);
+	text-transform: uppercase;
+	outline: 5px dotted blueviolet;
+}
+
+span {
+	font-style: italic;
+}
+
+.replica.blue {
+	color: aqua;
+}
+
+.text.paragraph {
+	color: blueviolet;
+	font-size: 11px;
+}
+
+span.line {
+	color: chartreuse;
+}
+
+p.line {
+	text-decoration: line-through;
+}
+span.replica {
+	font-family: "Bloxhall", sans-serif;
+	font-size: 18px;
+}
+
+.text2 {
+	text-align: right;
+	margin: 20px;
+	/* max-width: 500px; */
+}
+
+.text3 p {
+	color: darkgray;
+}
+
+/* первый уровень влож-ти */
+.text1 > p {
+	color: midnightblue;
+}
+
+/* следующий после текущего (overline)  */
+.overline + p {
+	text-decoration: overline;
+	text-transform: lowercase;
+}
+
+p.overline {
+	width: 500px;
+	color: blue;
+	background-color: #fff;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	padding-right: 30px;
+	text-align: justify;
+	text-indent: 0px;
+	text-shadow: 10px 10px 3px purple;
+	margin: 50px;
+	border: 8px double rgb(255, 45, 192);
+}
+
+/* все после текущего (cornflowerblue) */
+.cornflowerblue ~ p {
+	color: cornflowerblue;
+}
+
+#tally {
+	font-family: "Bloxhall", sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: crimson;
+	text-decoration: underline;
+}
+
+p.img {
+	color: darkred;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+footer {
+	font-family: "Bloxhall", sans-serif;
+	background-color: rgb(142, 223, 248);
+	padding: 30px;
+	margin: 20px 30px 50px 30px;
+}
+
+.footer__text1,
+.footer__text2 {
+	text-align: right;
+	font-size: 12px;
+	color: black;
+	word-spacing: 20px;
+}
+
+.footer__text2 {
+	color: plum;
+	text-transform: lowercase;
+}
+
+.link {
+	background-color: #fff;
+	padding: 20px;
+	margin: 30px 0;
+	border-radius: 20px 30px 10px 15%;
+}
+
+.img {
+	margin-bottom: 30px;
+}
+
+.inst {
+	background-color: rgba(255, 111, 224, 0.623);
+	max-width: 500px;
+	margin: 0 auto;
+	color: deeppink;
+	font-size: 25px;
+	font-style: italic;
+	padding: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 0 40px;
+	box-shadow: 40px 40px 20px rgb(177, 26, 177);
+	opacity: 0.8;
+}
+
+.inst__bottom {
+	background-color: #ffcaf8;
+	margin-top: 40px;
+	padding: 30px;
+	border-radius: 40px;
+	box-shadow: 25px 25px 25px rgba(112, 1, 93, 0.24);
+}
+
+.inst__img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 25px 25px 25px rgba(112, 1, 93, 0.24);
+}
+
+.p1__text1 {
+	margin-top: 50px;
+}
+
+main {
+	text-indent: 25px;
+}
+
+.p__text {
+	white-space: nowrap;
+	letter-spacing: 10px;
+	height: 50px;
+}
+
+.cornflowerblue {
+	letter-spacing: 10px;
+	text-transform: capitalize;
+	min-width: 600px;
+}
+
+.p1__text {
+	max-width: 650px;
+	margin: 80px;
+	text-align: justify;
+}
+
+.text1__height {
+	height: 20px;
+}
+
+p.p1__text3 {
+	max-width: 400px;
+	margin: 0 auto;
+	color: darkolivegreen;
+}
+
+/* прибило к правой стороне */
+.p2__text3 {
+	max-width: 300px;
+	margin: 0 0 0 auto;
+}
+
+.p3__text3 {
+	max-height: 100px;
+	max-width: 500px;
+	overflow: scroll;
+	margin: 0 auto;
+	border: 5px dashed rgb(236, 255, 65);
+}
+
+.p4__text3 {
+	max-height: 165px;
+	max-width: 800px;
+	overflow: hidden;
+	background-color: rgb(253, 177, 247);
+	margin-top: 20px;
+	border-top: 3px dotted darkcyan;
+	border-right: 5px solid rgb(107, 176, 255);
+	border-left: 10px dashed rgb(255, 0, 200);
+	border-bottom: 5px double rgb(26, 146, 32);
+}
+
+.block {
+	display: none;
+}
+
+.p5__text {
+	background-color: rgb(184, 253, 238);
+	/* прозрачный бордер играет роль паддинга */
+	border-left: 20px solid transparent;
+}
+
+.bradbury {
+	color: chartreuse;
+	border-bottom: 2px solid chocolate;
+}
+
+.p2__text1 {
+	visibility: hidden;
+}
